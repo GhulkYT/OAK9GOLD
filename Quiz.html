@@ -1,22 +1,43 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Lorenzo's Homepage</title>
-    <link rel="stylesheet" href="Quiz.css">
+    <title>Basketball Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
 </head>
-<body>
-    <div class="topnav">
-        <a href="Home.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a class="active" href="Quiz.html">Quiz</a>
-      </div>
+<body>  
+  <div class="topnav">
+    <a href="Home.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="https://www.hiddengeniusproject.org/">Hidden Genius Project</a>
+    <div class="dropdown">
+        <button class="dropbtn">Quizes 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="quiz.html">Basketball</a>
+          <a href="#">Football</a>
+          <a href="#">Anime</a>
+        </div>
+      </div> 
+    </div>
+  </div>
     <h1>Quiz</h1>
     <br>
-    <h2 class="center">This Quiz Will Be About Basketball Records</h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <img src="arbys p2.png">
-    <h2 class="center"> You loss the quiz by existing</h2>
+    <h2 class="center">This Quiz Will Be About NBA Records</h2>
+
+    <form id="quiz">
+        <label for="score" class="center">Who has the most overall points in the NBA?</label>
+        <input class="center" type="text" id="score" value="">
+        <br>
+        <label class="center" for="rebounds">Who has the most overall rebounds in the NBA?</label>
+        <input class="center" type="text" id="rebounds" value="">
+        <br>
+        <label class="center" for="russ">Who has the most overall triple doubles in the NBA?</label>
+        <input class="center" type="text" id="russ" value="">
+        <br>
+        <button class="center" onclick="quiz()">submit</button>
+    </form>
 </body>
+</html>
